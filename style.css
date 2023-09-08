@@ -22,8 +22,9 @@ body {
 
 img {
     display: block;
-    width: 100%;
-    height: auto;
+    max-height: 95vh;
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
 .heading-1 {
@@ -55,7 +56,7 @@ img {
 /* img container */
 
 .img-container {
-    margin: 1rem 30%;
+    margin: 1rem;
 }
 
 .img-container img {
@@ -70,4 +71,15 @@ img {
     .img-container {
         margin: 1rem;
     }
+}
+
+/* Scroll snap */
+
+.img-container {
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+}
+
+.img-container>a {
+    scroll-snap-align: start;
 }
