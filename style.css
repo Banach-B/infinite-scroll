@@ -72,14 +72,3 @@ img {
         margin: 1rem;
     }
 }
-
-/* Scroll snap */
-
-.img-container {
-    scroll-snap-type: y mandatory;
-    overflow: scroll;
-}
-
-.img-container>a {
-    scroll-snap-align: start;
-}
